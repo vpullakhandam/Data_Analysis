@@ -25,3 +25,20 @@ CHANGE SaleDateConverted SaleDate DATE;
 SELECT SaleDate
 FROM nashville_housing
 
+-- Populate Property Address data
+
+-- Some of the Property Address fields are empty, so those fields which have the same ParcelID are populated with the Address of the other field which share ParcelID's. 
+
+Select a.ParcelID, a.PropertyAddress,b.ParcelID, b.PropertyAddress
+from nashville_housing a
+join nashville_housing b
+ON a.ParcelID = b.ParcelID
+AND a.uniqueID <> b.UniqueID
+WHERE a.PropertyAddress = '';
+
+UPDATE nashville_housing a
+JOIN nashville_housing b ON a.ParcelID = b.ParcelID AND a.UniqueID <> b.UniqueID
+SET a.PropertyAddress = IF(a.PropertyAddress = '', b.PropertyAddress,b.PropertyAddress)
+WHERE a.PropertyAddress = '';
+
+
