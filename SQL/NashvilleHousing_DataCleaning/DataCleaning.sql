@@ -41,4 +41,36 @@ JOIN nashville_housing b ON a.ParcelID = b.ParcelID AND a.UniqueID <> b.UniqueID
 SET a.PropertyAddress = IF(a.PropertyAddress = '', b.PropertyAddress,b.PropertyAddress)
 WHERE a.PropertyAddress = '';
 
+-- Breaking out Address into Individual Columns (Address, City, State)
 
+-- SELECT PropertyAddress
+-- FROM nashville_housing;
+
+SELECT SUBSTRING(PropertyAddress, 1, LOCATE(',', PropertyAddress) - 1) AS Address,
+SUBSTRING(PropertyAddress, LOCATE(',', PropertyAddress) +1, length(PropertyAddress)) AS Address
+FROM nashville_housing;
+
+--  CREATING 3 NEW COLUMNS 
+
+ALTER TABLE nashville_housing
+ADD Address VARCHAR(255);
+
+ALTER TABLE nashville_housing
+ADD City VARCHAR(255);
+
+ALTER TABLE nashville_housing
+ADD State VARCHAR(255);
+
+UPDATE nashville_housing
+SET Address = SUBSTRING(PropertyAddress, 1, LOCATE(',', PropertyAddress) - 1);
+
+UPDATE nashville_housing
+SET City = SUBSTRING(PropertyAddress, LOCATE(',', PropertyAddress) +1, length(PropertyAddress));
+
+UPDATE nashville_housing
+SET State = SUBSTRING_INDEX(OwnerAddress, ',', -1);
+
+
+SELECT * FROM nashville_housing;
+
+-- Change Y and N to Yes and No in "Sold as Vacant" field
