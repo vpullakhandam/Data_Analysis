@@ -80,3 +80,32 @@ SET SoldAsVacant =
 	   When SoldAsVacant = 'N' THEN 'No'
 	   ELSE SoldAsVacant
 	   END);
+
+-- Remove Duplicates
+WITH RowNumCTE AS (
+    SELECT UniqueID,
+           ROW_NUMBER() OVER (
+               PARTITION BY ParcelID,
+                            Address,
+                            SalePrice,
+                            SaleDate,
+                            LegalReference
+               ORDER BY UniqueID
+           ) AS row_num
+    FROM nashville_housing
+)
+DELETE FROM nashville_housing
+WHERE UniqueID IN (
+    SELECT UniqueID
+    FROM RowNumCTE
+    WHERE row_num > 1
+);
+
+
+-- Delete Unused Columns
+
+
+ALTER TABLE nashville_housing
+DROP COLUMN OwnerAddress, 
+DROP COLUMN PropertyAddress, 
+DROP COLUMN SaleDate;
