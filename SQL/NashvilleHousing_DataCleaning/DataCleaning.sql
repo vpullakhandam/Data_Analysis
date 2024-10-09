@@ -74,3 +74,9 @@ SET State = SUBSTRING_INDEX(OwnerAddress, ',', -1);
 SELECT * FROM nashville_housing;
 
 -- Change Y and N to Yes and No in "Sold as Vacant" field
+Update nashville_housing
+SET SoldAsVacant = 
+(CASE When SoldAsVacant = 'Y' THEN 'Yes'
+	   When SoldAsVacant = 'N' THEN 'No'
+	   ELSE SoldAsVacant
+	   END);
