@@ -54,16 +54,24 @@ The analysis uses the `Netflix_Data.csv` dataset, which contains information abo
 | 1998 | 26               |
 | 1999 | 26               |
 
+
 6. The distribution of movie durations from the histogram you provided shows a somewhat bell-shaped curve with a slight right skew. Most of the movies have durations between 90 and 125 minutes, with the highest frequency around the 100-minute mark. Fewer movies are longer, with the frequency decreasing as the duration increases past 125 minutes. There are also a few movies shorter than 75 minutes, but they are much less common.
+
+
 7. Top countries producing 1990s movies on Netflix:
+
    United States
    India
    UK
    Hong Kong
    France
+
+
 8. The average cast size for 1990s movies is 9.21
+
 9. Dramas, action films, and classic movies tend to have longer durations, while genres like comedies, children's films, and stand-up shows are generally shorter.
-10. Common themes in 1990s movie descriptions include when, after, who, their,family,love and more.
+
+10. Common themes in 1990s movie descriptions include when, after, who, their, family, love and more.
 
 ## Acknowledgments
 
