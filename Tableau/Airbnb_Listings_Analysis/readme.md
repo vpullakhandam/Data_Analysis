@@ -6,6 +6,10 @@ This project presents an interactive dashboard created with Tableau to analyze A
 
 The Airbnb dataset used for this project includes details about listing prices, the number of bedrooms, and revenue trends. The Tableau dashboard presents an analysis of key variables such as price, bedrooms, and zip code to identify market dynamics.
 
+### Image
+
+<img src="Images/Dashboard.png" width="400"/>
+
 ### Tableau
 
 This is the Tableau Dashboard that I have created using the data. Look at the Dashboard here [Dashboard](https://public.tableau.com/app/profile/vaishnavi.pullakhandam/viz/AirbnbListingsandRevenueAnalysisDashboard/Airbnb_Data_Dashboard)
