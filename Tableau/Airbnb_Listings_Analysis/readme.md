@@ -8,7 +8,7 @@ The Airbnb dataset used for this project includes details about listing prices, 
 
 ### Image
 
-<img src="Images/Dashboard.png" width="400"/>
+<img src="Image/Dashboard.png" width="400"/>
 
 ### Tableau
 
