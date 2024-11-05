@@ -4,6 +4,7 @@
 -- https://leetcode.com/problems/rising-temperature/description/?envType=study-plan-v2&envId=top-sql-50
 
 
-SELECT w1.id
-FROM Weather AS w1 , Weather AS w2
-WHERE w1.Temperature > w2.Temperature AND DATEDIFF(w1.recordDate , w2.recordDate) = 1
+select w1.id 
+from Weather w1 join Weather w2
+on w1.recordDate = w2.recordDate+INTERVAL 1 DAY
+where w1.temperature > w2.temperature
