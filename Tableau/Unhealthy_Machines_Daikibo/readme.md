@@ -24,7 +24,7 @@ This dashboard shows machine downtime per factory and device type. The "Down_Tim
 
 ### Tableau
 
-This is the Tableau Dashboard that I have created using the data. Look at the Dashboard here [Dashboard]()
+This is the Tableau Dashboard that I have created using the data. Look at the Dashboard here [Dashboard](https://public.tableau.com/app/profile/vaishnavi.pullakhandam/viz/Deloitte_JobSim/Dashboard?publish=yes)
 
 ### Conclusion
 
