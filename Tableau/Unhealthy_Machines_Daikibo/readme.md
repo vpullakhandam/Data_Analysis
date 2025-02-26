@@ -16,7 +16,7 @@ What are the machines that broke most often in that location?
 
 ### Overview
 
-The Airbnb dataset used for this project includes details about listing prices, the number of bedrooms, and revenue trends. The Tableau dashboard presents an analysis of key variables such as price, bedrooms, and zip code to identify market dynamics.
+This dashboard shows machine downtime per factory and device type. The "Down_Time_Per_Factory" section highlights the unhealthy downtime across different factory locations, while the "Down_Time_Per_Device_Type" section shows which device types experienced the most downtime. The color scale on the right indicates the severity of unhealthy downtime.
 
 ### Image
 
@@ -27,5 +27,15 @@ The Airbnb dataset used for this project includes details about listing prices, 
 This is the Tableau Dashboard that I have created using the data. Look at the Dashboard here [Dashboard]()
 
 ### Conclusion
+
+- The location where machines broke the most is daikibo-factory-seiko.
+- The machine that broke most often in that location is the LaserWelder.
+
+### Acknowledgment
+
+A big thank you to Deloitte Australia and Forage for the opportunity to work on Project SIM. This project provided invaluable insights into real-world problem-solving and enhanced my skills in data analysis and decision-making. I truly appreciate the chance to learn and grow through this experience.
+
+
+
 
 
