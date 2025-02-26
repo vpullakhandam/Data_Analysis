@@ -35,7 +35,4 @@ This is the Tableau Dashboard that I have created using the data. Look at the Da
 
 A big thank you to Deloitte Australia and Forage for the opportunity to work on Project SIM. This project provided invaluable insights into real-world problem-solving and enhanced my skills in data analysis and decision-making. I truly appreciate the chance to learn and grow through this experience.
 
-
-
-
-
+<img src="Image/Certificate_JobSim.png"/>
