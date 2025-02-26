@@ -24,8 +24,8 @@ The Airbnb dataset used for this project includes details about listing prices, 
 
 ### Tableau
 
-This is the Tableau Dashboard that I have created using the data. Look at the Dashboard here [Dashboard](https://public.tableau.com/app/profile/vaishnavi.pullakhandam/viz/AirbnbListingsandRevenueAnalysisDashboard/Airbnb_Data_Dashboard)
+This is the Tableau Dashboard that I have created using the data. Look at the Dashboard here [Dashboard]()
 
 ### Conclusion
 
-This dashboard helps identify trends in pricing and revenue across different neighborhoods and property sizes, providing a strategic tool for Airbnb property investments.
+
